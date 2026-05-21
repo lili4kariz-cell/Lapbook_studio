@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Лэпбуки для детей</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Montserrat', sans-serif;
+      background:#fffdf8;
+      color:#333;
+      line-height:1.5;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    header{
+      background:linear-gradient(135deg,#ffb347,#ff7b7b);
+      padding:80px 0;
+      color:white;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:52px;
+      font-weight:800;
+      margin-bottom:20px;
+    }
+
+    header p{
+      font-size:22px;
+      max-width:700px;
+      margin:auto;
+      margin-bottom:35px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:18px 36px;
+      background:white;
+      color:#ff6b6b;
+      font-weight:700;
+      border-radius:50px;
+      text-decoration:none;
+      transition:0.3s;
+      font-size:18px;
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+      background:#fff3f3;
+    }
+
+    .section{
+      padding:80px 0;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:40px;
+      margin-bottom:50px;
+      color:#ff7b7b;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:white;
+      border-radius:25px;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:25px;
+    }
+
+    .card h3{
+      font-size:24px;
+      margin-bottom:10px;
+    }
+
+    .price{
+      color:#ff6b6b;
+      font-size:28px;
+      font-weight:800;
+      margin:15px 0;
+    }
+
+    .features{
+      list-style:none;
+      margin-bottom:20px;
+    }
+
+    .features li{
+      margin-bottom:8px;
+    }
+
+    .mini-btn{
+      display:inline-block;
+      background:#ff7b7b;
+      color:white;
+      padding:12px 22px;
+      border-radius:30px;
+      text-decoration:none;
+      font-weight:700;
+    }
+
+    .advantages{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .adv{
+      background:#fff5f5;
+      padding:35px;
+      border-radius:25px;
+      text-align:center;
+    }
+
+    .adv h4{
+      font-size:24px;
+      margin-bottom:15px;
+      color:#ff6b6b;
+    }
+
+    .reviews{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:25px;
+    }
+
+    .review{
+      background:white;
+      padding:30px;
+      border-radius:20px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .review strong{
+      display:block;
+      margin-top:15px;
+      color:#ff7b7b;
+    }
+
+    .cta{
+      background:linear-gradient(135deg,#ff7b7b,#ffb347);
+      color:white;
+      text-align:center;
+      padding:90px 20px;
+      border-radius:40px;
+    }
+
+    .cta h2{
+      font-size:44px;
+      margin-bottom:20px;
+    }
+
+    .cta p{
+      font-size:22px;
+      margin-bottom:35px;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px 0;
+      color:#777;
+      font-size:14px;
+    }
+
+    @media(max-width:768px){
+
+      header h1{
+        font-size:38px;
+      }
+
+      .section-title{
+        font-size:30px;
+      }
+
+      .cta h2{
+        font-size:32px;
+      }
+
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Электронные макеты лэпбуков</h1>
+      <p>
+        Яркие, готовые к печати материалы для детского сада,
+        школы и развивающих занятий.
+      </p>
+
+      <a href="#catalog" class="btn">Смотреть макеты</a>
+    </div>
+  </header>
+
+  <section class="section" id="catalog">
+    <div class="container">
+
+      <h2 class="section-title">Популярные лэпбуки</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop" alt="">
+
+          <div class="card-content">
+            <h3>Времена года</h3>
+
+            <p>
+              Интерактивный лэпбук для изучения сезонов.
+            </p>
+
+            <div class="price">490 ₽</div>
+
+            <ul class="features">
+              <li>✔ PDF формат</li>
+              <li>✔ Готов к печати</li>
+              <li>✔ Яркий дизайн</li>
+            </ul>
+
+            <a href="#" class="mini-btn">Купить</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=1200&auto=format&fit=crop" alt="">
+
+          <div class="card-content">
+            <h3>Правила ПДД</h3>
+
+            <p>
+              Игры и карточки для изучения безопасности.
+            </p>
+
+            <div class="price">590 ₽</div>
+
+            <ul class="features">
+              <li>✔ 20 страниц</li>
+              <li>✔ Цветные задания</li>
+              <li>✔ Для детей 4–8 лет</li>
+            </ul>
+
+            <a href="#" class="mini-btn">Купить</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=1200&auto=format&fit=crop" alt="">
+
+          <div class="card-content">
+            <h3>Мир музыки</h3>
+
+            <p>
+              Лэпбук с музыкальными инструментами и играми.
+            </p>
+
+            <div class="price">550 ₽</div>
+
+            <ul class="features">
+              <li>✔ А3 формат</li>
+              <li>✔ Карточки и задания</li>
+              <li>✔ Подходит для ДОУ</li>
+            </ul>
+
+            <a href="#" class="mini-btn">Купить</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <h2 class="section-title">Почему выбирают нас</h2>
+
+      <div class="advantages">
+
+        <div class="adv">
+          <h4>Готово к печати</h4>
+          <p>
+            Просто скачайте и распечатайте.
+          </p>
+        </div>
+
+        <div class="adv">
+          <h4>Яркий дизайн</h4>
+          <p>
+            Красочные материалы нравятся детям.
+          </p>
+        </div>
+
+        <div class="adv">
+          <h4>Экономия времени</h4>
+          <p>
+            Не нужно делать макеты самостоятельно.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <h2 class="section-title">Отзывы</h2>
+
+      <div class="reviews">
+
+        <div class="review">
+          <p>
+            “Очень красивые макеты! Дети были в восторге.”
+          </p>
+
+          <strong>— Анна, воспитатель</strong>
+        </div>
+
+        <div class="review">
+          <p>
+            “Качество супер, всё удобно распечатывается.”
+          </p>
+
+          <strong>— Мария, педагог</strong>
+        </div>
+
+        <div class="review">
+          <p>
+            “Покупаю уже третий лэпбук, экономит массу времени.”
+          </p>
+
+          <strong>— Светлана</strong>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="cta">
+
+        <h2>Скачайте свой первый лэпбук уже сегодня</h2>
+
+        <p>
+          После оплаты файл приходит автоматически на почту.
+        </p>
+
+        <a href="#" class="btn">Выбрать макет</a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Все права защищены
+  </footer>
+
+</body>
+</html>
